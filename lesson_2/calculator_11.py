@@ -1,3 +1,8 @@
+"""
+This is a calculator that takes 2 numbers and outputs an operation
+on the numbers
+"""
+
 def prompt (message):
     print(f'==> {message}')
 
@@ -25,7 +30,7 @@ while invalid_number(number2):
     prompt("Hmm that doesn't look like a valid number")
     number2 = input()
 
-prompt('What operation would you like to perform?\n''1) Add 2) Subtract 3) Multiply 4) Divide')
+prompt('What operation would you like to perform?\n' + '1) Add 2) Subtract 3) Multiply 4) Divide')
 operation = input()
 
 while operation not in ['1', '2', '3', '4']:
