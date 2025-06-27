@@ -22,5 +22,5 @@ while odd_stop % 2 == 0 or odd_start > odd_stop:
     print("thats not an odd number or your end is less than your start")
     odd_stop = int(input('try again: '))
 
-for x in range(odd_start,odd_stop,2):
+for x in range(odd_start,odd_stop + 2,2):
     print(x)
