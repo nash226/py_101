@@ -12,13 +12,14 @@ students = [
     {'name': 'Alice', 'grade': 85},
     {'name': 'Bob'}, {'name': 'Jack', 'grade': 72},
     {'name': 'Jane', 'grade': 75},
+    {'name': "Jill", 'grade': 0}
 ]
 
 def collect_grades(students):
     grades = []
     for student in students:
         name, grade = process_student(student)
-        if grade:
+        if grade != None:
             grades.append(grade)
     return grades
 
