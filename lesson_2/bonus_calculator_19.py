@@ -71,10 +71,8 @@ while True:
         case '3':
             output = float(number1) * float(number2)
         case '4':
-            try: output = float(number1) / float(number2)
-            except ZeroDivisionError: 
-                print("Cant divide by zero")
-                continue
+            output = float(number1) / float(number2)
+            
 
     prompt('result')
 
