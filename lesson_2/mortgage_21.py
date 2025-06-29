@@ -20,8 +20,8 @@ def not_valid(x):
 
 apr = input("Enter APR %: ")
 
-while invalid_number(apr) and float(apr) < 0:
-    not_valid(apr)
+while invalid_number(apr) or float(apr) < 0:
+    apr = not_valid(apr)
 
 apr = float(apr)
 
@@ -30,14 +30,14 @@ monthly_int_rate = (apr / 100) / 12
 loan_amount = input("Enter Loan amount ($): ")
 
 while invalid_number(loan_amount) or float(loan_amount) <= 0:
-    not_valid(loan_amount)
+    loan_amount = not_valid(loan_amount)
 
 loan_amount = float(loan_amount)
 
 loan_duration = input("Enter loan duration (months): ")
 
 while invalid_number(loan_duration)or float(loan_duration) <= 0 :
-    not_valid(loan_duration)
+    loan_duration = not_valid(loan_duration)
 
 loan_duration = float(loan_duration)
 
